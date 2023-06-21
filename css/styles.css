@@ -1,8 +1,127 @@
 /* En este archivo escriban su CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+
 
 /* Fonts */
 /* Importar aquí la font */
 
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lato:wght@400;700&family=Open+Sans:wght@300&family=Roboto+Condensed&display=swap');
+
+  header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+   
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px  20px;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 5px 15px  -4px  #5f5f5f;
+  }
+
+
+    .logo img {
+        width: 100px;
+        height: auto;
+    }
+nav ul {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav li{
+    margin-right: 20px;
+    ;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #0f0f0f;
+    background-color: #fbfbfb;
+    margin: 10px;
+    padding: 10px;
+
+   
+        
+    
+   }
+
+.foto {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 50px;    
+    justify-content: center;
+    align-items: center;
+    
+}
+
+   h1{
+    display: block;
+    font-size: 36px;
+    text-align: center;
+    justify-content: center;
+    
+
+
+   }
+
+   p {
+    display: fle;
+    justify-content: center;
+    text-align: center;
+    margin-left: 0px;
+     
+    
+  }
+
+  .button {
+    display: inline-block;
+    background-color: #af599e;
+    color: #fbfbfb;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+   
+    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 140px;
+    
+  }
+
+  #descarga {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
 
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
@@ -10,13 +129,7 @@
 */
 
 /* Reset */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
-    scroll-behavior: smooth;
-}
+
 
 /* Para quitar los puntos a los items de listas */
 ul {
@@ -28,14 +141,67 @@ a {
     text-decoration: none;
     color: inherit;
 }
+#contacto {
+    min-height: 20vh;
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(175, 89, 158, 0.3);   
+    
+}
+ 
+h2{
+    text-align: center;
+    font-size: 28px;
+}
 
 /* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
 *  el margin: auto; para tenerlo centrado fácilmente ;)
 */
+
+
 main {
-    max-width: 1200px;
-    margin: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
+
+li{
+    display: flex;
+    margin-right: 25px;
+    padding: 50px;
+    width: 30px;
+    height: auto;
+    justify-content: center;
+      
+    
+}
+ul{
+    display: flex;
+    align-items: center;
+}
+
+.iconos{
+    font-size: 80px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30%;
+}
+
+
+footer {
+    background-color: #af599e;
+    color: #fbfbfb;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
@@ -54,3 +220,5 @@ main {
 *    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
 *    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
 */
+
+
